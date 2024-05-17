@@ -1,0 +1,57 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+img{
+     max-width: 100%;
+     display: block;
+}
+button{
+     border: none;
+}
+a,ul{
+     list-style: none;
+     text-decoration: none;
+}
+a{
+     display: inline-block;
+}
+:root{
+     --font-league-spartan: "League Spartan", sans-serif;
+     
+     --font-w-500: 500;
+     --font-w-600: 600;
+     --font-w-700: 700;
+
+     --font-sz-500: 1.2rem;
+     --font-sz-600: 3rem;
+     --font-sz-700: 4rem;
+     --font-sz-tx: 1.4rem;
+     --font-sz-title: clamp(2.25rem, 1.75rem + 2.5vw, 4rem);
+
+     --line-ht-text: 140%;
+
+     --cor-text: hsl(0, 0%, 63%);
+     --cor-Black: hsl(0, 0%, 0%);
+     --cor-White: hsl(0, 0%, 100%);
+     --cor-Very-Dark-Gray: hsl(0, 0%, 27%);
+}
+/* geral*/
+html{
+     font-size: 62.5%;
+}
+body{
+     font-family: var(--font-league-spartan);
+     font-size: var(--font-sz-500);
+     font-weight: var(--font-w-500);
+     min-height: 100vh;
+}
+h2{
+     font-size: var(--font-sz-title);
+}
+p{
+     color: var(--cor-text);
+     line-height: var(--line-ht-text);
+     font-size: var(--font-sz-tx);
+}

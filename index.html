@@ -11,79 +11,104 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Room homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <div class="container">
-    <header>
-      <nav>
-        <button>
-          <img src="images/icon-hamburger.svg" alt="">
-        </button>
+    <header class="header">
+      <picture class="header__picture">
+        <img src="images/mobile-image-hero-1.jpg" alt="" class="header__image-hero">
+      </picture>
 
-        <a href="index.html">
-          <img src="images/logo.svg" alt="logo room">
-        </a>
+      <nav class="navbar" id="js_navbar">
+        <div class="navbar__mobile flex-align-center">
+          <button id="js_btn-open-menu">
+            <img src="images/icon-hamburger.svg" alt="">
+          </button>
 
-        <!-- <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#shop">Shop</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul> -->
+          <div class="navbar__logo">
+            <img src="images/logo.svg" alt="logo room">
+          </div>
+        </div>
+
+        <div class="navbar__mobile-sidebar flex-align-center">
+          <button id="js_btn-close-menu">
+            <img src="images/icon-close.svg" alt="">
+          </button>
+
+          <ul class="navbar__mobile-menu flex-align-center">
+            <li><a href="#home" class="navbar__link">home</a></li>
+            <li><a href="#shop" class="navbar__link">Shop</a></li>
+            <li><a href="#about" class="navbar__link">about</a></li>
+            <li><a href="#contact" class="navbar__link">contact</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <main>
       <section>
-        <h2>Discover innovative ways to decorate</h2>
-        <p>
-          We provide unmatched quality, comfort, and style for property owners across the country.
-          Our experts combine form and function in bringing your vision to life. Create a room in your
-          own style with our collection and make your property a reflection of you and what you love.
-        </p>
-        <button>Shop now</button>
-        <!---
-        <h2>We are available all across the globe</h2>
-        <p>
-          With stores all over the world, it's easy for you to find furniture for your home or place of business.
-          Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
-          store locator. Any questions? Don't hesitate to contact us today.
-        </p>
-        <button>Shop now</button>
-        <h2>Manufactured with the best materials</h2>
-        <p>
-          Our modern furniture store provide a high level of quality. Our company has invested in advanced technology
-          to ensure that every product is made as perfect and as consistent as possible. With three decades of
-          experience in this industry, we understand what customers want for their home and office.
-        </p>
-        <button>Shop now</button>
-      -->
+        <article class="about">
+          <h2 class="margin-bottom-subtitles">Discover innovative ways to decorate</h2>
+          <p>
+            We provide unmatched quality, comfort, and style for property owners across the country.
+            Our experts combine form and function in bringing your vision to life. Create a room in your
+            own style with our collection and make your property a reflection of you and what you love.
+          </p>
+          <button class="btn-shop-now uppercase lt-spacing-8">
+            Shop now
+            <img src="images/icon-arrow.svg" alt="">
+          </button>
+        </article>
+        
+        <!-- <article>
+          <h2>We are available all across the globe</h2>
+          <p>
+            With stores all over the world, it's easy for you to find furniture for your home or place of business.
+            Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
+            store locator. Any questions? Don't hesitate to contact us today.
+          </p>
+          <button>Shop now</button>
+        </article>
+        <article>
+          <h2>Manufactured with the best materials</h2>
+          <p>
+            Our modern furniture store provide a high level of quality. Our company has invested in advanced technology
+            to ensure that every product is made as perfect and as consistent as possible. With three decades of
+            experience in this industry, we understand what customers want for their home and office.
+          </p>
+          <button>Shop now</button>
+        </article> -->
       </section>
 
       <section>
-        <h3>About our furniture</h3>
-        <p>
-          Our multifunctional collection blends design and function to suit your individual taste.
-          Make each room unique, or pick a cohesive theme that best express your interests and what
-          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-          or anything in between. Product specialists are available to help you create your dream space.
-        </p>
+        <div class="about__box-img">
+          <img src="images/image-about-dark.jpg" alt="">
+        </div>
+
+        <article class="about">
+          <h3 class="uppercase lt-spacing-4 margin-bottom-subtitles">About our furniture</h3>
+          <p>
+            Our multifunctional collection blends design and function to suit your individual taste.
+            Make each room unique, or pick a cohesive theme that best express your interests and what
+            inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+            or anything in between. Product specialists are available to help you create your dream space.
+          </p>
+        </article>
+
+        <div class="about__box-img">
+          <img src="images/image-about-light.jpg" alt="">
+        </div>
       </section>
-      
     </main>
 
-    <footer class="attribution">
+    <footer class="footer">
       <p>
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
+        Coded by <a href="#">KahSR</a>.
       </p>
     </footer>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
